@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+}
+
+nav{
+    padding: 1rem;
+    background-color: rgba(49, 172, 0, 0.867);
+    color: white;
+    font-size: 20px;
+}
+
+main {
+    flex-grow: 1;
+    display: grid;
+    place-content: center;
+}
+
+h1,p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #f0e000;
+}
+
+a:hover{
+    opacity: 0.85;
+}
