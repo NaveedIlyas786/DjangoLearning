@@ -1,11 +1,21 @@
-
 {% extends "Layout.html" %}
 
-{% block title %}
-Post App
+{% block title %} 
+  Post App 
 {% endblock %}
 
 {% block content %}
-<h1>PostAppModule Page</h1>
+<section>
+  <h1>PostAppModule Page </h1>
+  <hr/>
+  {% for post in posts %}
+  <article>
+    <strong>{{ post.title }}</strong>
+    <p>{{ post.city }}</p>
+    <p>{{ post.date }}</p>
+
+  </article>
+  {% endfor %}
+</section>
 {% endblock %}
 

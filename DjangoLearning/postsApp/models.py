@@ -7,3 +7,6 @@ class Post(models.Model):
     body= models.TextField()
     city= models.CharField(max_length=75)
     date= models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.city
