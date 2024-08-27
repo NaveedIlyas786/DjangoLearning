@@ -10,12 +10,16 @@
   <hr/>
   {% for post in posts %}
   <article>
-    <strong>{{ post.title }}</strong>
+    <strong>
+      <a href="{% url 'page' slug=post.slug %}">
+        {{ post.title }}
+      </a>
+    </strong>
     <p>{{ post.city }}</p>
     <p>{{ post.date }}</p>
-
   </article>
-  {% endfor %}
+{% endfor %}
+
 </section>
 {% endblock %}
 

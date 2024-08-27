@@ -15,13 +15,15 @@
     </title>
     
 
+
 </head>
 <body>
     
     <nav>
-        <a href="/">Home</a> |
+        <a href="/"><span role="img" aria-label="Home">🎨</span></a> |
         <a href="/about">About</a> |
-        <a href="/postsApp">News</a>
+        {% comment %} <a href="/postsApp">News</a> {% endcomment %}
+        <a href="{% url 'postsApp'%}">News</a>
     </nav>
     
     <main>
